@@ -444,6 +444,18 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+.pic {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.luis {
+  background-image: url('../img/luis.jpg');
+}
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
