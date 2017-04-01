@@ -14,13 +14,16 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,33 +34,32 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Luis <font color= "#18BC9C">Bustamante</font></a>
+                <a class="navbar-brand page-scroll" href="#page-top">Luis Bustamante</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -66,165 +68,127 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class = "pic luis"></div>
-                    <div class="intro-text">
-                        <br><span class="name"><font color="#18BC9C">Luis Bustamante</font></span>
-                        <hr>
-                        <br><span class="skills">Computer Tech - Web Developer - Programmer</span>
-                    </div>
-                </div>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Luis Bustamante</h1>
+                <hr>
+                <p>Programmer - Web Developer - Computer Technician</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Background:</h2>
+                    <hr class="light">
+                    <p class="text-faded">Born and raised in Texas, and currently living in San Antonio, Texas. I am a student at the University of Texas at San Antonio(UTSA) majoring in Computer Science with a concentration in Software Engineering. I currently work part-time with UTSA OIT helping other students and staff as technical support. However, I am seeking and open for internship or job opportunities. During my spare time I like to take long walks at parks, play video games, or watch sports and movies.</p>
+                    <a href="#skills" class="page-scroll btn btn-default btn-xl sr-button">Skills!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2><font color="#18BC9C">Portfolio</font></h2><hr>
+                    <h2 class="section-heading">My Skills</h2>
+                    <hr class="primary">
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-keyboard-o text-primary sr-icons"></i>
+                        <h3>Coding</h3>
+                        <p class="text-muted"> C, C++, Java, HTML, CSS, JavaScript, sed, awk, perl</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-wrench text-primary sr-icons"></i>
+                        <h3>Technologies</h3>
+                        <p class="text-muted">git and Linux CLI</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
+                        <h3>Education</h3>
+                        <p class="text-muted">University of Texas at San Antonio, San Antonio, TX - 2017</p>
+                        <p class="text-muted">B.S. Computer Science: Software Engineering and Cyber Security</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-globe text-primary sr-icons"></i>
+                        <h3>Fluent in</h3>
+                        <p class="text-muted">English and Spanish</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-12">
+                    <a href="img/portfolio/fullsize/maes.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/maes.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Website
+                                </div>
+                                <div class="project-name">
+                                    MAES UTSA
+                                </div>
                             </div>
                         </div>
-                        <img src="img/portfolio/maesUtsa.png" class="img-responsive" alt="">
                     </a>
                 </div>
+                <!--<div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
             </div>
         </div>
     </section>
 
-    <!-- Résumé Section -->
-    <section class="success" id="about">
+    <section id="contact">
         <div class="container">
             <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Have a comment or a question? Want to hire me? That's great! Send me an email and I will get back to you as soon as possible!</p>
+                </div>
                 <div class="col-lg-12 text-center">
-                    <h2><font color="#18BC9C">About</font></h2><hr>
-                    <div align="left">
-                        <br><h4>Background</h4>
-                        <p>Born and raised in Texas, and currently living in San Antonio, Texas. I am a student at the University of Texas at San Antonio(UTSA) studying Computer Science. I work part-time with UTSA OIT helping students and staff as technical support. During my spare time I like to spend time with my family, dog, and 3 cats. I also love travelling and walking at parks/hiking the hill country.</p>
-                        <br><h4>Skills</h4>
-                        <p><b>Coding</b>: C, C++, Java, HTML, CSS, JavaScript, sed, awk, perl</p>
-                        <p><b>Technologies</b>: git, Linux CLI</p>
-                        <p><b>Languages</b>: English and Spanish</p>
-                        <br><h4>Experience</h4>
-                        <br><p><b>Student Connect</b>, San Antonio, TX - 2013-Present<p>
-                        <ul style="list-style-type:disc">
-                            <li>Lab Assistant</li>
-                            <li>Technical Support</li>
-                            <li>Document problems using a ticketing system.</li>
-                        </ul>
-                        
-                        <br><p><b>Personal Projects</b>, can be found under my <a href="#portfolio">portfolio</a>.</p>
-                        
-                        <br><h4>Education</h4>
-                        <p><b>University of Texas at San Antonio</b>, San Antonio, TX - 2017</p>
-                        <p><b>B.S. Computer Science</b>: Software Engineering and Cyber Security</p>
-                        <p><b>Relevant Coursework</b>: Intro to Programming 1 (C++ & Java), Intro to Programming 2 (C), Discrete Mathematics, Foundations of Mathematics, Data Structures, Application Programming, Systems Programming, Computer Organization, Programming Languages, Software Engineering, Analysis of Algorithms</p>
-                    </div>
+                    <a href="mailto:luisbusta@me.com"><font color="black"><i class="fa fa-envelope-o fa-3x sr-contact"></font></i>
+                    <p>luisbusta@me.com</p></a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="blueTexas">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3 style="color: #18BC9C">Location</h3>
-                        <p style="color: white">San Antonio, TX</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3 style="color: #18BC9C">Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                               <a href="https://www.linkedin.com/in/luisbustamannte" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/luisbusta" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/luisbusta_" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3 style="color: #18BC9C">Contact Luis</h3>
-                        <p style="color: white">Email: <a href="mailto:luisbusta@me.com">luisbusta@me.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Luis Bustamante 2016
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2><font color="#18BC9C">MAES UTSA</font></h2>
-                            <hr>
-                            <a href="http://maesutsa.org" target="_blank">
-                            <img src="img/portfolio/maesUtsa.png" class="img-responsive img-centered" alt=""></a>
-                            <p>MAES UTSA asked for a website that featured information about their organization, kept their members up to date with events and news, and made it easy for new members to join. I designed a website from scratch for them that met all their needs and more. I used bootstrap since most of the users access the website via mobile devices while also giving the website a nice and simple look. I implemented the Google Calendar under events so members are able to easily check upcoming events. I also created a "Join" button that links new members to the official MAES website, so they can easily join. Extra features that I included was a officers section with a picture of every officer and created a "Donate" button that links to the organization's PayPal account.</p>
-                            <ul class="list-inline item-details">
-                                <li><b>Client</b>:
-                                    <a href="http://maesutsa.org">MAES UTSA</a>
-                                </li>
-                                <li><b>Date</b>:
-                                    Fall 2016
-                                </li>
-                                <li><b>Service</b>:
-                                    Web Development
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -233,14 +197,12 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/creative.min.js"></script>
 
 </body>
 
