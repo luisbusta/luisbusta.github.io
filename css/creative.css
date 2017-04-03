@@ -379,6 +379,9 @@ fieldset[disabled] .btn-primary.active {
   background-color: black;
   border-color: black;
 }
+.profile-img{
+  padding-top: 10px;
+  padding-bottom: 25px;
 .btn-primary .badge {
   color: black;
   background-color: white;
